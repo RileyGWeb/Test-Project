@@ -26,6 +26,8 @@ Route::name('save')
 Route::name('store')
     ->get('/{store}', [StoreController::class, 'show']);
 
+Route::resource('logos', 'App\Http\Controllers\LogoController');
+
 Route::namespace('Location')
     ->prefix('{storeUuid}/location')
     ->name('location.')

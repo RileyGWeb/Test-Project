@@ -81,10 +81,12 @@ class StoreController extends Controller
      */
     public function store(StoreStoreRequest $request): \Illuminate\Http\RedirectResponse
     {
+        // dd($request);
         $this->store->create([
             'store_name' => $request->store_name
         ]);
 
+        // $request->file->store('images', 'public');
         return redirect()->route('store.index');
     }
 }

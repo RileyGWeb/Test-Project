@@ -20,7 +20,8 @@ class Store extends Model
      * @var string[]
      */
     protected $fillable = [
-        'store_name'
+        'store_name',
+        'store_logo'
     ];
 
     /**

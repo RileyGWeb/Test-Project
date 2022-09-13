@@ -20,6 +20,13 @@
                             <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="storeName" name="store_name" type="text" placeholder="Store Name">
                         </div>
 
+                        <!-- <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="storeLogo">
+                                Store Logo
+                            </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="storeLogo" name="store_logo" type="file" placeholder="Store Name">
+                        </div> -->
+
                         @if ($errors->any())
                             <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
                                 <ul>

@@ -76,4 +76,12 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(Store::class);
     }
+
+     /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function shoppers(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
+    {
+        return $this->hasOne(Shopper::class);
+    }
 }

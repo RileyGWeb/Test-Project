@@ -26,7 +26,14 @@ Route::middleware(['auth:sanctum', 'verified'])
     ->name('store.')
     ->group(__DIR__ . '/Store/web.php');
 
+Route::namespace('Shopper')
+    ->prefix('shopper')
+    ->name('shopper.')
+    ->group(__DIR__ . '/Shopper/web.php');
+
 Route::namespace('Store')
     ->prefix('sign-in')
     ->name('public.')
     ->group(__DIR__ . '/Store/Location/public.php');
+
+
