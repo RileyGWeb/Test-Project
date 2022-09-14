@@ -24,9 +24,9 @@
                                         {{ $store['store_name'] ?? null }}
                                     </x-table-column>
 
-                                    <x-table-column>
+                                    <!-- <x-table-column>
                                         {{ $store['store_logo'] ?? null }}
-                                    </x-table-column>
+                                    </x-table-column> -->
 
                                     <x-table-column>
                                         @if( isset($store['uuid']) )

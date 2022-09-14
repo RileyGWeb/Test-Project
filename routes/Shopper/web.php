@@ -17,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::name('check-in')
     ->get('/check-in', [ShopperController::class, 'check_in']);
 
+Route::name('check-in-form')
+    ->get('/check-in-form', [ShopperController::class, 'check_in_form']);
+

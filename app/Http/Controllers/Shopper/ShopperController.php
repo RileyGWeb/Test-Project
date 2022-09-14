@@ -53,7 +53,20 @@ class ShopperController extends Controller
         );
 
         return view('shopper.check-in')
-            ->with('stores', $user['stores'] ?? null);;
+            ->with('stores', $user['stores'] ?? null);
+    }
+
+    public function check_in_form()
+    {
+        $user = $this->user->show(
+            [
+                'id' => Auth::user()->id
+            ],
+            ['Stores']
+        );
+
+        return view('shopper.check-in-form')
+            ->with('stores', $user['stores'] ?? null);
     }
 
   
